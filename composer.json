@@ -1,14 +1,15 @@
 {
     "name": "swoft-rewrite/swoft-server",
-    "description": "分布式开发,重写swoft框架之 -- Console 模块",
+    "description": "分布式开发,重写swoft框架之 -- Server 模块",
     "keywords": ["swoft","Server"],
-    "license": "Apache-2.0",
+    "license": "MIT",
     "authors": [
         {
             "name": "zhanghongbo",
             "email": "taobao1875@163.com"
         }
     ],
+    "minimum-stability":"dev",
     "require": {
         "php": ">7.1.0"
     },
