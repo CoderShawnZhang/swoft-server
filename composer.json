@@ -1,7 +1,7 @@
 {
     "name": "swoft-rewrite/swoft-server",
-    "description": "分布式开发,重写swoft框架之 -- Server 模块",
-    "keywords": ["swoft","Server"],
+    "description": "分布式开发，重写swoft框架之 -- http-server 模块",
+    "keywords":["swoft","server"],
     "license": "MIT",
     "authors": [
         {
@@ -11,23 +11,20 @@
     ],
     "minimum-stability":"dev",
     "require": {
-        "php": ">7.1.0"
+        "php":">7.1.0"
     },
-    "require-dev": {
-        "phphunit/phpunit": "^7.5"
+    "require-dev":{
+        "phpunit/phpunit":"^7.5"
     },
-    "autloader": {
+    "autoload": {
         "psr-4": {
             "SwoftRewrite\\Server\\":"src/"
-        },
-        "files": [
-            "src/Helper/Functions.php"
-        ]
+        }
     },
     "autoload-dev":{
-        "osr-4": {
-            "SwoftRewrite\\Server\\Unit\\": "test/unit/",
-            "SwoftRewrite\\Server\\Testing\\": "test/testing"
+        "psr-4":{
+            "SwoftRewrite\\Server\\Unit\\":"test/unit/",
+            "SwoftRewrite\\Server\\Testing\\":"test/testing/"
         }
     }
 }
