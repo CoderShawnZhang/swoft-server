@@ -1,0 +1,33 @@
+{
+    "name": "swoft-rewrite/swoft-server",
+    "description": "",
+    "keywords": [""],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "zhanghongbo",
+            "email": "taobao1875@163.com"
+        }
+    ],
+    "minimum-stability":"dev",
+    "require": {
+        "php": ">7.1.0"
+    },
+    "require-dev": {
+        "phphunit/phpunit": "^7.5"
+    },
+    "autloader": {
+        "psr-4": {
+            "SwoftRewrite\\Server\\":"src/"
+        },
+        "files": [
+            "src/Helper/Functions.php"
+        ]
+    },
+    "autoload-dev":{
+        "osr-4": {
+            "SwoftRewrite\\Server\\Unit\\": "test/unit/",
+            "SwoftRewrite\\Server\\Testing\\": "test/testing"
+        }
+    }
+}
